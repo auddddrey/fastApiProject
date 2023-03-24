@@ -93,3 +93,11 @@ async def logprice_endpoint(item: Item):
         return {"logprice_predicted": yhat.select("prediction").first()[0]}
     except Exception as e:
         return {"error": str(e)}
+
+#   Test endpoint
+@app.get('/')
+async def init_endpoint():
+    try:
+        return {"hello": "world"}
+    except Exception as e:
+        return {"error": str(e)}

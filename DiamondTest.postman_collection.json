@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "5f9fb1a5-be8e-4e44-a918-71f024b0f530",
+		"name": "DiamondTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "1108267"
+	},
+	"item": [
+		{
+			"name": "Test Endpoint",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/",
+				"description": "Get logprice for dimond"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Log price",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"carat\": 0.2,\n  \"cut\": \"Premium\",\n  \"color\": \"E\",\n  \"clarity\": \"VS2\",\n  \"depth\": 61.1,\n  \"table\": 59.0,\n  \"x\": 3.81,\n  \"y\": 3.78,\n  \"z\": 2.32\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/logprice",
+				"description": "Get logprice for dimond"
+			},
+			"response": []
+		}
+	]
+}
