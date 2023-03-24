@@ -4,6 +4,10 @@
     - Make sure all the dependencies are installed properly from requirements.txt
 
 ## Run the code from main.py to launch the fast api endpoint
+    - Import the project as a FastAPI project from pycharm 
+    - Or you can start the endpoint by below command 
+        - uvicorn main:app --reload
+    - The endpoint will be running on http://localhost:8000/
     - Two ways of testing the endpoint
         - Run curl GET http://localhost:8000/ to test the endpoint is up and running, hello world should return
         - import the postman collection into your postman, /fastApiProject/DiamondTest.postman_collection.json
