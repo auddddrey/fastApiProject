@@ -5,7 +5,8 @@
 
 ## Run the code from main.py to launch the fast api endpoint
     - Import the project as a FastAPI project from pycharm 
-    - Or you can start the endpoint by below command 
+        - https://www.jetbrains.com/help/pycharm/fastapi-project.html#run-debug-configuration
+    - Or you can start the endpoint by below command from terminal inside any IDE
         - uvicorn main:app --reload
     - The endpoint will be running on http://localhost:8000/
     - Two ways of testing the endpoint
